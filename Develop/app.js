@@ -6,17 +6,9 @@ const path = require("path");
 const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = path.join(OUTPUT_DIR, "./output/team.html");
 
 const render = require("./lib/htmlRenderer");
-
-// ===== Node Packages =====
-const inquirer = require("inquirer");
-const fs = require("fs");
-
-const Manager = require("./lib/Manager");
-const Intern = require("./lib/Intern");
-const Engineer = require("./lib/Engineer");
 
 // ===== START FUNCTION =====
 async function start() {
